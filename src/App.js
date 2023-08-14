@@ -7,6 +7,7 @@ import group19 from './Group 19.png'
 import vectorimg from './Vector.png'
 import group17 from './Group 17.png'
 import noads from './noads.png'
+import razor from './razor.png'
 
 const App = () => {
   return (
@@ -87,6 +88,7 @@ const App = () => {
                <button className="cancelbtn" >Cancel</button>
                <button className="paybtn">Proceed to Pay</button>
               </div>
+              <div className="razor1"><img src={razor} alt=""  /></div>
               </div>
             </section>       
                     

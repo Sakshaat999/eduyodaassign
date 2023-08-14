@@ -635,6 +635,15 @@ height: 24px;
 margin-right: 10px;
 }
 
+.razor1{
+  position: relative;
+  top: 30px;
+  
+}
+.razor1 img{
+  height: 40px;
+  width: 100px;
+}
 
 
 
