@@ -677,7 +677,7 @@ margin-right: 10px;
 
 @media (max-width: 1650px) {
   .grid{
-    gap: 18rem;
+    gap: 16rem;
   }
   .container{
     margin-left: 40px;
@@ -689,19 +689,7 @@ margin-right: 10px;
 
 
 
-@media (min-width: 1250px) {
-  .logo{
-    margin: 13px 20px;
-    position: relative;
-    
-    }
 
-  
-}
-
-@media (max-width: 1250px) {
-  
-}
 
 @media (max-width: 1040px) {
   .section{
@@ -751,36 +739,12 @@ margin-right: 10px;
     color: white;
   }
 
-  .mobile-navbar-btn {
-    display: block;
-    z-index: 9999;
-  }
-
-  .active .navbar {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(0);
-    z-index: 999;
-  }
-
-  .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
-    display: block;
-    color: white;
-  }
-  .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
-    display: none;
-    color: var(--white);
-  }
+ 
 
   .section::before {
     height: 30%;
   }
 
-  .hero-image img {
-    height: 350px;
-    width: 350px;
-  }
  
   .section {
     padding: 9.6rem 0;
@@ -814,39 +778,13 @@ margin-right: 10px;
     font-size: 4.5rem;
     font-weight: 700;
   }
-  .logo{
-    font-size: 2.5rem;
-    font-weight: bold; 
-    padding-right: 15px;
-  }
- 
+
   
   
   
 }
 
 
-  @media (max-width: 630px){
-   .container{
-    margin-left: 25px;
-   }
-   
-  }
-  @media (max-width: 360px){ 
-   .primary-heading{
-    font-size: 4rem;
-   }   
-   
-   
-  } 
 
-  @media (max-width: 290px){
-    
-    .primary-heading {
-      font-size: 3.5rem;
-      font-weight: 700;
-    }
-    
-  }
 
 

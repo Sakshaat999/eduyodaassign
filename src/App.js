@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import './App.css'
 import chevicon from './Icon Chevron Down.png'
 import searchicon from './Search Icon.png'
@@ -10,6 +11,33 @@ import noads from './noads.png'
 import razor from './razor.png'
 
 const App = () => {
+  const [price1, setprice1] = useState(179)
+  const [price2, setprice2] = useState(149)
+  const [price3, setprice3] = useState(99)
+  const [totalprice, settotalprice] = useState(18321)
+  const [resprice, setresprice] = useState(212)
+  
+  function offer1(){
+    setprice1(179)
+    settotalprice(18321)
+    setresprice(212)
+  }
+  
+
+  function offer2(){
+    setprice2(149)
+    settotalprice(18351)
+    setresprice(176)
+  }
+
+  function offer3(){
+    setprice3(99)
+    settotalprice(18401)
+    setresprice(117)
+  }
+
+  
+
   return (
     <div>
    
@@ -67,9 +95,9 @@ const App = () => {
                 <div className="radio-list">
                   <h1>Select your subcription plan</h1>
                   <div className="radio-item "><input name="radio" id="radio1" type="radio" /><label for="radio1" style={{background:"grey" }}>12 Month Subscription <div className="permon">  Total ₹99 <sub>₹8 /mo</sub></div>   </label></div>
-                  <div className="radio-item"><input name="radio" id="radio2" type="radio" checked /><label for="radio2">12 Month Subscription <div className="permon">  Total ₹179 <sub>₹15 /mo</sub></div></label></div>
-                  <div className="radio-item"><input name="radio" id="radio3" type="radio" /><label for="radio3">6 Months Subscription <div className="permon">  Total ₹149 <sub>₹25 /mo</sub></div></label></div>
-                  <div className="radio-item"><input name="radio" id="radio4" type="radio" /><label for="radio4">3 Months Subscription <div className="permon">  Total ₹99 <sub>₹33 /mo</sub></div></label></div>
+                  <div className="radio-item"><input name="radio" id="radio2" type="radio" checked onClick={offer1} /><label for="radio2">12 Month Subscription <div className="permon">  Total ₹{price1} <sub>₹15 /mo</sub></div></label></div>
+                  <div className="radio-item"><input name="radio" id="radio3" type="radio" onClick={offer2} /><label for="radio3">6 Months Subscription <div className="permon">  Total ₹{price2} <sub>₹25 /mo</sub></div></label></div>
+                  <div className="radio-item"><input name="radio" id="radio4" type="radio" onClick={offer3} /><label for="radio4">3 Months Subscription <div className="permon">  Total ₹{price3} <sub>₹33 /mo</sub></div></label></div>
                 </div>
               <div className="bottomsec">
                 <div className="toplab">
@@ -78,12 +106,12 @@ const App = () => {
                 </div>
                 
                 <div className="offer" >
-                  <label ><div id="limoff">Limited Time Offer</div><div id="redprice">-₹18401</div>
+                  <label ><div id="limoff">Limited Time Offer</div><div id="redprice">-₹{totalprice}</div>
                    <div className="offerdesc"> <img src="Icon Clock (2).png" alt="" id="offerclock" />Offer valid till 25th March 2023 </div>
                   </label> 
                 </div>
                 <div className="labels">Total (Incl. of 18% GST)</div>
-                <div className="mainprice">₹149</div>
+                <div className="mainprice">₹{resprice}</div>
                 <div className="endbtn">
                <button className="cancelbtn" >Cancel</button>
                <button className="paybtn">Proceed to Pay</button>
